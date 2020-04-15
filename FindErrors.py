@@ -72,10 +72,10 @@ def check(c):
     # 运行到最后有剩余行
     # 正确程序还有剩余行
     if c.trueNum == c.trueLine.__len__() and c.falseNum != c.falseLine.__len__():
-        answerDict[c.falseNum] = {-1}
+        answerDict[c.falseNum] = -1
     # 错误程序还有剩余行
     elif c.falseNum == c.falseLine.__len__() and c.trueNum != c.trueLine.__len__():
-        answerDict[c.falseNum] = {-2}
+        answerDict[c.falseNum] = -2
     return answerDict
 
 
